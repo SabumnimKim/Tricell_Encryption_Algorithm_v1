@@ -1,0 +1,17 @@
+graph TD
+    A[Input: Text Message] --> B[Create Caesar Cipher Wheel Array<br/>a-z]
+    B --> C[Generate Random Rotation<br/>Number 0-25]
+    C --> D[Rotate Array by<br/>Random Steps]
+    D --> E[Store Rotation as Letter<br/>Position in Alphabet]
+    E --> F[Encrypt Each Letter<br/>Find in Original, Replace<br/>with Rotated Position]
+    F --> G[Generate Random Salt<br/>Length 0-25]
+    G --> H[Store Salt Length as Letter<br/>Position in Alphabet]
+    H --> I[Add Random Letters to<br/>Beginning of Encrypted Message]
+    I --> J[Add Random Letters to<br/>End of Encrypted Message]
+    J --> K[Construct Final Array:<br/>Salt_Indicator + Encrypted_Message + Salt]
+    K --> L[Output: Encrypted Message]
+    
+    style A fill:#e1f5ff
+    style L fill:#c8e6c9
+    style E fill:#fff9c4
+    style H fill:#fff9c4
